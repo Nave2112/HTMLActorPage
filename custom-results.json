@@ -1,9 +1,9 @@
 {
   "config": {
     "configFile": "C:\\Users\\Naveen\\Playwright\\playwright.config.js",
-    "rootDir": "C:/Users/Naveen/Playwright",
+    "rootDir": "C:/Users/Naveen/Playwright/tests",
     "forbidOnly": false,
-    "fullyParallel": false,
+    "fullyParallel": true,
     "globalSetup": null,
     "globalTeardown": null,
     "globalTimeout": 0,
@@ -27,6 +27,10 @@
         {
           "outputFile": "custom-results.json"
         }
+      ],
+      [
+        "list",
+        null
       ]
     ],
     "reportSlowTests": {
@@ -40,9 +44,37 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {},
-        "id": "",
-        "name": "",
-        "testDir": "C:/Users/Naveen/Playwright",
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/Naveen/Playwright/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/Naveen/Playwright/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "C:/Users/Naveen/Playwright/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/Naveen/Playwright/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "C:/Users/Naveen/Playwright/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -59,15 +91,15 @@
   },
   "suites": [
     {
-      "title": "tests\\SauceDemo.spec.js",
-      "file": "tests/SauceDemo.spec.js",
+      "title": "SauceDemo.spec.js",
+      "file": "SauceDemo.spec.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
           "title": "SauceDemo Tests",
-          "file": "tests/SauceDemo.spec.js",
+          "file": "SauceDemo.spec.js",
           "line": 77,
           "column": 6,
           "specs": [
@@ -80,13 +112,13 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "",
-                  "projectName": "",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 15709,
+                      "duration": 16918,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
@@ -94,30 +126,76 @@
                       "steps": [
                         {
                           "title": "Login",
-                          "duration": 2201
+                          "duration": 2486
                         },
                         {
                           "title": "Sort products",
-                          "duration": 2769
+                          "duration": 2082
                         },
                         {
                           "title": "Add items and checkout",
-                          "duration": 4685
+                          "duration": 5041
                         },
                         {
                           "title": "Complete order",
-                          "duration": 2400
+                          "duration": 2341
                         }
                       ],
-                      "startTime": "2025-04-17T07:26:28.063Z",
-                      "attachments": []
+                      "startTime": "2025-04-17T14:30:03.893Z",
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\Naveen\\Playwright\\test-results\\SauceDemo-SauceDemo-Tests-Add-items-to-cart-and-checkout-chromium\\video-1.webm"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\Naveen\\Playwright\\test-results\\SauceDemo-SauceDemo-Tests-Add-items-to-cart-and-checkout-chromium\\video.webm"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\Naveen\\Playwright\\test-results\\SauceDemo-SauceDemo-Tests-Add-items-to-cart-and-checkout-chromium\\video-2.webm"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\Naveen\\Playwright\\test-results\\SauceDemo-SauceDemo-Tests-Add-items-to-cart-and-checkout-chromium\\video-3.webm"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\Naveen\\Playwright\\test-results\\SauceDemo-SauceDemo-Tests-Add-items-to-cart-and-checkout-chromium\\video-5.webm"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\Naveen\\Playwright\\test-results\\SauceDemo-SauceDemo-Tests-Add-items-to-cart-and-checkout-chromium\\video-4.webm"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\Naveen\\Playwright\\test-results\\SauceDemo-SauceDemo-Tests-Add-items-to-cart-and-checkout-chromium\\video-6.webm"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\Naveen\\Playwright\\test-results\\SauceDemo-SauceDemo-Tests-Add-items-to-cart-and-checkout-chromium\\video-7.webm"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\Naveen\\Playwright\\test-results\\SauceDemo-SauceDemo-Tests-Add-items-to-cart-and-checkout-chromium\\video-8.webm"
+                        }
+                      ]
                     }
                   ],
                   "status": "expected"
                 }
               ],
-              "id": "24e19040f62b68a9776b-8504325ceea50e3006cd",
-              "file": "tests/SauceDemo.spec.js",
+              "id": "a7a9e2998e1bfde0dc92-be675e74851b21221207",
+              "file": "SauceDemo.spec.js",
               "line": 83,
               "column": 7
             }
@@ -128,8 +206,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-04-17T07:26:25.925Z",
-    "duration": 20921.121,
+    "startTime": "2025-04-17T14:30:02.070Z",
+    "duration": 19146.678,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,
